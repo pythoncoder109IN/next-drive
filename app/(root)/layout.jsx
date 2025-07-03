@@ -1,5 +1,5 @@
-import Header from "@/components/Header";
-import Sidebar from "@/components/Sidebar";
+import EnhancedHeader from "@/components/EnhancedHeader";
+import EnhancedSidebar from "@/components/EnhancedSidebar";
 import MobileNavigation from "@/components/MobileNavigation";
 
 import { Toaster } from "@/components/ui/toaster";
@@ -12,11 +12,11 @@ const Layout = async ({ children }) => {
 
   if (!currentUser) return redirect("/sign-in");
   return (
-    <main className="flex h-screen">
-      <Sidebar {...currentUser} />
+    <main className="flex h-screen bg-gradient-to-br from-light-400 to-white">
+      <EnhancedSidebar {...currentUser} />
       <section className="flex h-full flex-1 flex-col">
         <MobileNavigation {...currentUser} />
-        <Header userId={currentUser.$id} accountId={currentUser.accountId} />
+        <EnhancedHeader userId={currentUser.$id} accountId={currentUser.accountId} />
         <div className="main-content">{children}</div>
       </section>
       <Toaster />

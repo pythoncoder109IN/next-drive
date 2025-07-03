@@ -1,16 +1,16 @@
 import React from "react";
 import { Button } from "./ui/button";
 import Image from "next/image";
-import Search from "./Search";
-import FileUploader from "./FileUploader";
+import EnhancedSearch from "./EnhancedSearch";
+import EnhancedFileUploader from "./EnhancedFileUploader";
 import { signOutUser } from "@/lib/actions/user.actions";
 
 const Header = ({userId, accountId}) => {
   return (
     <header className="header">
-      <Search />
+      <EnhancedSearch />
       <div className="header-wrapper">
-        <FileUploader ownerId={userId} accountId={accountId}  />
+        <EnhancedFileUploader ownerId={userId} accountId={accountId}  />
         <form
           action={async () => {
             "use server";

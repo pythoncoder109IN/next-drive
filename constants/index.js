@@ -1,3 +1,5 @@
+import { User, Settings, Shield, Bell, HelpCircle } from "lucide-react";
+
 export const navItems = [
   {
     name: "Dashboard",
@@ -23,6 +25,34 @@ export const navItems = [
     name: "Others",
     icon: "/assets/icons/others.svg",
     url: "/others",
+  },
+];
+
+export const profileNavItems = [
+  {
+    name: "Profile",
+    icon: User,
+    url: "/profile",
+  },
+  {
+    name: "Settings",
+    icon: Settings,
+    url: "/profile/settings",
+  },
+  {
+    name: "Security",
+    icon: Shield,
+    url: "/profile/security",
+  },
+  {
+    name: "Notifications",
+    icon: Bell,
+    url: "/profile/notifications",
+  },
+  {
+    name: "Help",
+    icon: HelpCircle,
+    url: "/profile/help",
   },
 ];
 
