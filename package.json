@@ -32,6 +32,7 @@
     "react-hook-form": "^7.58.1",
     "recharts": "^2.15.4",
     "tailwind-merge": "^2.5.4",
+    "tunnel-agent": "^0.6.0",
     "use-debounce": "^10.0.5",
     "zod": "^3.25.67"
   },
